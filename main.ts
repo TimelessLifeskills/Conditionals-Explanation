@@ -1,6 +1,6 @@
 let Marks = 0
 input.onButtonPressed(Button.A, function () {
-    Marks = 5
+    Marks = randint(0, 25)
     if (Marks >= 20) {
         basic.showString("Well done!")
     } else if (Marks >= 15) {
@@ -8,11 +8,11 @@ input.onButtonPressed(Button.A, function () {
     } else if (Marks >= 10) {
         basic.showString("You can do better")
     } else {
-        basic.showString("Put more effort.")
+        basic.showString("Put more effort")
     }
 })
 input.onButtonPressed(Button.B, function () {
-    Marks = 5
+    Marks = randint(0, 25)
     if (Marks <= 9) {
         basic.showString("Put more effort.")
     } else if (Marks <= 14) {
